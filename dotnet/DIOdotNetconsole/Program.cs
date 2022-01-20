@@ -37,6 +37,9 @@ using DIOdotNetconsole.models;
 // System.Console.WriteLine($"Resultado da primeira soma: {calc.Somar(1,2)}");
 // System.Console.WriteLine($"Resultado da segunda soma: {calc.Somar(1,2,3)}");
 
-Corrente conta = new Corrente();
-conta.Creditar(20.6);
-conta.ExibirSaldo();
+// Corrente conta = new Corrente();
+// conta.Creditar(20.6);
+// conta.ExibirSaldo();
+
+Calculadora calc = new Calculadora();
+System.Console.WriteLine($"Soma de 2 e 2: {calc.Somar(2,2)}");
