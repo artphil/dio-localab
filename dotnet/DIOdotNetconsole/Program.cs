@@ -13,7 +13,30 @@ using DIOdotNetconsole.models;
 // p1.Idade = 56;
 // p1.Apresentar();
 
-Propfessor p1 = new Propfessor();
-p1.Nome = "Caio";
-p1.Idade = 32;
-p1.Apresentar();
+// Pessoa p1 = new Pessoa();
+// p1.Nome = "Caio";
+// p1.Idade = 32;
+// p1.Documento = "5566992233";
+// p1.Apresentar();
+
+// Aluno p2 = new Aluno();
+// p2.Nome = "Caio";
+// p2.Idade = 32;
+// p2.Documento = "5566992233";
+// p2.Nota = 55.2;
+// p2.Apresentar();
+
+// Propfessor p3 = new Propfessor();
+// p3.Nome = "Caio";
+// p3.Idade = 32;
+// p3.Documento = "5566992233";
+// p3.Salario = 1057.2;
+// p3.Apresentar();
+
+// Calculadora calc = new Calculadora();
+// System.Console.WriteLine($"Resultado da primeira soma: {calc.Somar(1,2)}");
+// System.Console.WriteLine($"Resultado da segunda soma: {calc.Somar(1,2,3)}");
+
+Corrente conta = new Corrente();
+conta.Creditar(20.6);
+conta.ExibirSaldo();
