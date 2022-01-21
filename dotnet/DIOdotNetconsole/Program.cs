@@ -1,6 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using DIOdotNetconsole.models;
-
 // Retangulo r = new Retangulo();
 // r.DefinirMedidas(30,30);
 // Console.WriteLine($"Area: {r.ObterArea()}");
@@ -26,7 +25,7 @@ using DIOdotNetconsole.models;
 // p2.Nota = 55.2;
 // p2.Apresentar();
 
-// Propfessor p3 = new Propfessor();
+// Professor p3 = new Professor();
 // p3.Nome = "Caio";
 // p3.Idade = 32;
 // p3.Documento = "5566992233";
@@ -44,8 +43,26 @@ using DIOdotNetconsole.models;
 // Calculadora calc = new Calculadora();
 // System.Console.WriteLine($"Soma de 2 e 2: {calc.Somar(2,2)}");
 
-Data dt = new Data();
-dt.Mes = 13;
-dt.ApresentarMes();
-dt.Mes = 11;
-dt.ApresentarMes();
+// Data dt = new Data();
+// dt.Mes = 13;
+// dt.ApresentarMes();
+// dt.Mes = 11;
+// dt.ApresentarMes();
+
+
+namespace DIOdotNetconsole
+{
+	class Program
+	{
+		public delegate int Operacao(int num1, int num2);
+		static void Main(string[] args)
+		{
+			Calculadora calc = new Calculadora();
+
+			Operacao op = new Operacao(calc.Somar);
+			op += calc.Subtrair;
+			op += calc.Multiplicar;
+			System.Console.WriteLine(op.Invoke(10, 35));
+		}
+	}
+}

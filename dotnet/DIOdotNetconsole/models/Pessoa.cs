@@ -15,6 +15,8 @@ namespace DIOdotNetconsole.models
 		{
 			this.Nome = nome;
 			this.Sobrenome = sobrenome;
+			this.Idade = 0;
+			this.Documento = string.Empty;
 		}
 		public string Nome { get; set; }
 		public string Sobrenome { get; set; }
