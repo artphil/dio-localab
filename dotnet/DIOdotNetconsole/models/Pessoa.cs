@@ -6,17 +6,23 @@ namespace DIOdotNetconsole.models
 	{
 		public Pessoa()
 		{
-			this.Nome = "";
+			this.Nome = string.Empty;
+			this.Sobrenome = string.Empty;
 			this.Idade = 0;
-			this.Documento = "";
-
+			this.Documento = string.Empty;
+		}
+		public Pessoa(string nome, string sobrenome)
+		{
+			this.Nome = nome;
+			this.Sobrenome = sobrenome;
 		}
 		public string Nome { get; set; }
+		public string Sobrenome { get; set; }
 		public int Idade { get; set; }
 		public string Documento { get; set; }
 		public virtual void Apresentar()
 		{
-			Console.WriteLine($"Olá, meu nome é {Nome} e tenho {Idade} anos");
+			Console.WriteLine($"Olá, meu nome é {Nome} {Sobrenome} e tenho {Idade} anos");
 		}
 	}
 }

@@ -41,5 +41,11 @@ using DIOdotNetconsole.models;
 // conta.Creditar(20.6);
 // conta.ExibirSaldo();
 
-Calculadora calc = new Calculadora();
-System.Console.WriteLine($"Soma de 2 e 2: {calc.Somar(2,2)}");
+// Calculadora calc = new Calculadora();
+// System.Console.WriteLine($"Soma de 2 e 2: {calc.Somar(2,2)}");
+
+Data dt = new Data();
+dt.Mes = 13;
+dt.ApresentarMes();
+dt.Mes = 11;
+dt.ApresentarMes();
